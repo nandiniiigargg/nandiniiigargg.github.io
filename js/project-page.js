@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const project = PROJECTS[slug];
   if (!project) return;
 
-  document.title = project.name + " — Nandini Garg";
+  document.title = project.name + ": Nandini Garg";
 
   document.getElementById("p-eyebrow").textContent = project.category.replace(/&amp;/g, "&");
   document.getElementById("p-heading").textContent = project.name;
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     files.forEach((fname) => {
       const img = document.createElement("img");
       img.src = `images/${slug}/${fname}`;
-      img.alt = `${project.name} — project file`;
+      img.alt = `${project.name} project file`;
       img.loading = "lazy";
       img.setAttribute("data-lightbox", "");
       gallery.appendChild(img);
