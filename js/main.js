@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Scroll reveal
-  const revealEls = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -32,20 +31,25 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     { threshold: 0.12 }
   );
-  revealEls.forEach((el) => io.observe(el));
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
   // Lightbox
   const lightbox = document.querySelector(".lightbox");
   const lightboxImg = lightbox.querySelector("img");
   const closeBtn = lightbox.querySelector(".lightbox-close");
 
-  document.querySelectorAll("[data-lightbox]").forEach((img) => {
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.getAttribute("src");
-      lightboxImg.alt = img.getAttribute("alt") || "";
-      lightbox.classList.add("open");
+  window.initLightbox = function () {
+    document.querySelectorAll("[data-lightbox]").forEach((img) => {
+      if (img.dataset.lightboxBound) return;
+      img.dataset.lightboxBound = "1";
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.getAttribute("src");
+        lightboxImg.alt = img.getAttribute("alt") || "";
+        lightbox.classList.add("open");
+      });
     });
-  });
+  };
+  window.initLightbox();
 
   const closeLightbox = () => lightbox.classList.remove("open");
   closeBtn.addEventListener("click", closeLightbox);

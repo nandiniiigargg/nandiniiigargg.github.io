@@ -1,0 +1,51 @@
+document.addEventListener("DOMContentLoaded", async () => {
+  const slug = document.body.getAttribute("data-project");
+  const project = PROJECTS[slug];
+  if (!project) return;
+
+  document.title = project.name + " — Nandini Garg";
+
+  document.getElementById("p-eyebrow").textContent = project.category.replace(/&amp;/g, "&");
+  document.getElementById("p-heading").textContent = project.name;
+  document.getElementById("p-tagline").textContent = project.tagline;
+  document.getElementById("p-description").innerHTML = project.description;
+  document.getElementById("p-role").innerHTML = "<strong>Role</strong>" + project.role;
+
+  const tagsEl = document.getElementById("p-tags");
+  project.tags.forEach((t) => {
+    const span = document.createElement("span");
+    span.className = "tag";
+    span.textContent = t;
+    tagsEl.appendChild(span);
+  });
+
+  // prev/next
+  const idx = PROJECT_ORDER.indexOf(slug);
+  const nextSlug = PROJECT_ORDER[(idx + 1) % PROJECT_ORDER.length];
+  const nextProject = PROJECTS[nextSlug];
+  const nextLink = document.getElementById("p-next");
+  nextLink.href = `project-${nextSlug}.html`;
+  nextLink.querySelector(".next-name").textContent = nextProject.name;
+
+  // gallery
+  try {
+    const res = await fetch("images/manifest.json");
+    const manifest = await res.json();
+    const files = manifest[slug] || [];
+    const gallery = document.getElementById("p-gallery");
+    files.forEach((fname) => {
+      const img = document.createElement("img");
+      img.src = `images/${slug}/${fname}`;
+      img.alt = `${project.name} — project file`;
+      img.loading = "lazy";
+      img.setAttribute("data-lightbox", "");
+      gallery.appendChild(img);
+    });
+    document.getElementById("p-count").textContent = files.length;
+
+    // re-init lightbox for dynamically added images
+    if (window.initLightbox) window.initLightbox();
+  } catch (e) {
+    console.error("Failed to load gallery", e);
+  }
+});
