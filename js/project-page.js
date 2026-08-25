@@ -19,6 +19,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     tagsEl.appendChild(span);
   });
 
+  const linksEl = document.getElementById("p-links");
+  if (project.links && project.links.length) {
+    project.links.forEach((l) => {
+      const a = document.createElement("a");
+      a.href = l.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.className = "btn btn-outline";
+      a.innerHTML = `${l.label} <span>&#8599;</span>`;
+      linksEl.appendChild(a);
+    });
+  }
+
   // prev/next
   const idx = PROJECT_ORDER.indexOf(slug);
   const nextSlug = PROJECT_ORDER[(idx + 1) % PROJECT_ORDER.length];

@@ -22,7 +22,7 @@ const PROJECTS = {
     description: "Built with a four-person team, starting from a blunt statistic: 36% of managers report burnout and 62% of employees feel stress from colleagues. We translated that tension into a social-deduction board game set in a mob-run Vegas, where players bet blind on who's holding the correct answer, and the highest bet wins when more than one player is right. I worked on the theme, board and card system design, and the full physical prototype — board, custom card decks, tokens, dice and guidebook — presented live to faculty.",
     role: "Concept &amp; game mechanics, physical prototyping, live presentation",
     tags: ["Game Mechanics", "Physical Prototyping", "Team Project"],
-    cover: "images/vegasvendetta-cover.jpg",
+    cover: "images/vegasvendetta/vegasvendetta-025.jpg",
     accent: "#a1272d"
   },
   ikea: {
@@ -32,11 +32,15 @@ const PROJECTS = {
     name: "IKEA",
     heading: "Emerging Tech Tools — IKEA",
     tagline: "The Future of Flexible Living.",
-    description: "Brief: help IKEA make furniture more adaptable and sustainable as customers' needs change. I designed a system around three moves — an <strong>AR/VR preview tool</strong> so customers can see a piece in their own space before buying, a <strong>\"Swap &amp; Save\"</strong> in-app take-back flow that rewards returned furniture with points toward a curated Material Portfolio of sustainable swaps, and <strong>IoT/RFID tracking</strong> that simplifies assembly and cuts loss in shipping. The concept closed with a trust-building ad campaign built on real family scenarios, countering perceptions of low durability. This project also includes the full supporting Research Document and Material Portfolio below.",
+    description: "Brief: help IKEA make furniture more adaptable and sustainable as customers' needs change. I designed a system around three moves — an <strong>AR/VR preview tool</strong> so customers can see a piece in their own space before buying, a <strong>\"Swap &amp; Save\"</strong> in-app take-back flow that rewards returned furniture with points toward a curated Material Portfolio of sustainable swaps, and <strong>IoT/RFID tracking</strong> that simplifies assembly and cuts loss in shipping. The concept closed with a trust-building ad campaign built on real family scenarios, countering perceptions of low durability.",
     role: "Service design, UX flow &amp; UI design, sustainability strategy",
     tags: ["Service Design", "AR/VR", "Sustainability"],
     cover: "images/ikea-cover.jpg",
-    accent: "#ffd23f"
+    accent: "#ffd23f",
+    links: [
+      { label: "Research Document (PDF)", url: "https://drive.google.com/file/d/1vUQmiYyIC_bRasCEomWQDoWvjJBsiAQ1/view" },
+      { label: "Material Portfolio (Flipbook)", url: "https://online.flippingbook.com/view/507970913/" }
+    ]
   },
   agoda: {
     order: 4,

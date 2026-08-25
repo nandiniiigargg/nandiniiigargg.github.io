@@ -490,6 +490,13 @@ section { padding: 120px 0; }
   margin-bottom: 6px;
 }
 .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.project-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.project-links .btn span { font-size: 13px; }
 .tag {
   font-size: 11px;
   font-weight: 600;
