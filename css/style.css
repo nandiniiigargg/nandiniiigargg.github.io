@@ -3,16 +3,16 @@
    ============================================ */
 
 :root {
-  --paper: #f3efe8;
-  --paper-dim: #ece6da;
-  --ink: #141311;
-  --ink-soft: #5c584f;
-  --rust: #c1502e;
-  --rust-dark: #9c3d22;
+  --paper: #15120d;
+  --paper-dim: #1d1811;
+  --ink: #f2ece1;
+  --ink-soft: #a89e90;
+  --rust: #e2673f;
+  --rust-dark: #b8502e;
   --sage: #7c8a6e;
-  --line: rgba(20, 19, 17, 0.13);
-  --card: #ffffff;
-  --pill: #14120f;
+  --line: rgba(255, 255, 255, 0.14);
+  --card: #241f17;
+  --pill: #262015;
 
   --font-display: "Space Grotesk", "Inter", -apple-system, sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -102,7 +102,7 @@ section { padding: 120px 0; }
   justify-content: space-between;
   background: var(--pill);
   border-radius: 100px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06);
 }
 
 .brand {
@@ -132,8 +132,8 @@ section { padding: 120px 0; }
 .nav-links a:hover { color: #fff; }
 
 .nav-cta {
-  background: #fff;
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
   padding: 9px 18px;
   border-radius: 100px;
   font-size: 13px;
@@ -387,7 +387,7 @@ section { padding: 120px 0; }
   position: relative;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.tile:hover .tile-media { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+.tile:hover .tile-media { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
 .tile-media img {
   width: 100%;
   height: auto;
@@ -525,7 +525,7 @@ section { padding: 120px 0; }
   height: auto;
   border-radius: 12px;
   cursor: zoom-in;
-  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.35);
 }
 
 .project-next {
