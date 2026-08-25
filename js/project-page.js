@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     tagsEl.appendChild(span);
   });
 
+  if (project.video) {
+    const videoWrap = document.getElementById("p-video");
+    videoWrap.innerHTML = `<video src="${project.video}" controls playsinline preload="metadata"></video>`;
+    videoWrap.style.display = "block";
+  }
+
   const linksEl = document.getElementById("p-links");
   if (project.links && project.links.length) {
     project.links.forEach((l) => {

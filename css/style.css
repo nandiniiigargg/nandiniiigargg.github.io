@@ -509,6 +509,19 @@ section { padding: 120px 0; }
 }
 
 .gallery-section { background: var(--paper-dim); padding: 70px 0 100px; }
+.video-wrap {
+  max-width: 920px;
+  margin: 0 auto 50px;
+}
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  display: block;
+  background: #000;
+}
+
 .gallery-head {
   display: flex;
   justify-content: space-between;

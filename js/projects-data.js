@@ -53,7 +53,8 @@ const PROJECTS = {
     role: "Spatial &amp; exhibition design, technical sketching, mascot-led wayfinding",
     tags: ["Exhibition Design", "Wayfinding UX", "Merchandise"],
     cover: "images/agoda-cover.jpg",
-    accent: "#1f7a6c"
+    accent: "#1f7a6c",
+    video: "videos/agoda-motion-graphics.mp4"
   },
   enableindia: {
     order: 5,
