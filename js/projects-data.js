@@ -95,7 +95,8 @@ const PROJECTS = {
     role: "Campaign concept, experience design, prototype build, billboard &amp; poster design",
     tags: ["Experience Design", "OOH / Billboard", "Competitive Strategy"],
     cover: "images/asianpaints-cover.jpg",
-    accent: "#d9702e"
+    accent: "#d9702e",
+    driveVideo: "https://drive.google.com/file/d/1bcNihmmvnHYsYocTkR4_06goXxBz-aSC/preview"
   }
 };
 

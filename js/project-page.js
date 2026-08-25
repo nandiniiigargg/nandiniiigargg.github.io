@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const videoWrap = document.getElementById("p-video");
     videoWrap.innerHTML = `<video src="${project.video}" controls playsinline preload="metadata"></video>`;
     videoWrap.style.display = "block";
+  } else if (project.driveVideo) {
+    const videoWrap = document.getElementById("p-video");
+    videoWrap.innerHTML = `<div class="drive-video-frame"><iframe src="${project.driveVideo}" allow="autoplay" allowfullscreen></iframe></div>`;
+    videoWrap.style.display = "block";
   }
 
   const linksEl = document.getElementById("p-links");
