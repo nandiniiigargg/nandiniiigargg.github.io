@@ -31,6 +31,7 @@ const PROJECTS = {
     tags: ["Game Mechanics", "Physical Prototyping", "Team Project"],
     cover: "images/vegasvendetta/vegasvendetta-025.jpg",
     accent: "#a1272d",
+    driveVideo: "https://drive.google.com/file/d/1KnUndQd9qf8RR2SVB4x6T8X4JCuLjqUX/preview",
     links: [
       { label: "Guidebook", url: "https://heyzine.com/flip-book/c478bf0e9a.html" }
     ]
