@@ -3,16 +3,16 @@
    ============================================ */
 
 :root {
-  --paper: #15120d;
-  --paper-dim: #1d1811;
-  --ink: #f2ece1;
-  --ink-soft: #a89e90;
-  --rust: #e2673f;
-  --rust-dark: #b8502e;
+  --paper: #FFFCEF;
+  --paper-dim: #F8F0D8;
+  --ink: #750505;
+  --ink-soft: #320208;
+  --rust: #320208;
+  --rust-dark: #1f0105;
   --sage: #7c8a6e;
-  --line: rgba(255, 255, 255, 0.14);
-  --card: #241f17;
-  --pill: #262015;
+  --line: rgba(117, 5, 5, 0.28);
+  --card: #FFFCEF;
+  --pill: #750505;
 
   --font-display: "Space Grotesk", "Inter", -apple-system, sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -102,7 +102,7 @@ section { padding: 120px 0; }
   justify-content: space-between;
   background: var(--pill);
   border-radius: 100px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,252,239,0.06);
 }
 
 .brand {
@@ -110,7 +110,7 @@ section { padding: 120px 0; }
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  color: #fff;
+  color: #FFFCEF;
   white-space: nowrap;
 }
 
@@ -126,14 +126,14 @@ section { padding: 120px 0; }
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,252,239,0.72);
   transition: color 0.2s ease;
 }
-.nav-links a:hover { color: #fff; }
+.nav-links a:hover { color: #FFFCEF; }
 
 .nav-cta {
-  background: var(--ink);
-  color: var(--paper);
+  background: #FFFCEF;
+  color: #750505;
   padding: 9px 18px;
   border-radius: 100px;
   font-size: 13px;
@@ -142,7 +142,7 @@ section { padding: 120px 0; }
   white-space: nowrap;
   transition: background 0.2s ease;
 }
-.nav-cta:hover { background: var(--rust); color: #fff; }
+.nav-cta:hover { background: #320208; color: #FFFCEF; }
 
 .nav-toggle {
   display: none;
@@ -150,10 +150,10 @@ section { padding: 120px 0; }
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,252,239,0.1);
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #FFFCEF;
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -331,6 +331,8 @@ section { padding: 120px 0; }
 /* ---------- Mission band ---------- */
 .mission {
   padding: 90px 0;
+  background: var(--pill);
+  color: #FFFCEF;
 }
 .mission p {
   font-family: var(--font-display);
@@ -340,7 +342,7 @@ section { padding: 120px 0; }
   max-width: 920px;
   letter-spacing: -0.01em;
 }
-.mission p .dim { color: var(--ink-soft); font-weight: 500; }
+.mission p .dim { color: rgba(255,252,239,0.78); font-weight: 500; }
 
 /* ---------- Services (stacked, template-style) ---------- */
 .services-list { margin-top: 10px; }
@@ -606,7 +608,7 @@ section { padding: 120px 0; }
 }
 .stat-card {
   background: var(--pill);
-  color: #fff;
+  color: #FFFCEF;
   border-radius: var(--radius);
   padding: 34px 28px;
 }
@@ -616,22 +618,22 @@ section { padding: 120px 0; }
   font-size: clamp(34px, 4vw, 48px);
   margin-bottom: 10px;
 }
-.stat-card span { color: rgba(255,255,255,0.68); font-size: 14px; }
+.stat-card span { color: rgba(255,252,239,0.68); font-size: 14px; }
 
 /* ---------- Footer / Contact ---------- */
 .footer-band {
   background: var(--pill);
-  color: #fff;
+  color: #FFFCEF;
   padding: 100px 0 40px;
   position: relative;
   overflow: hidden;
 }
-.footer-band .eyebrow { color: var(--rust); }
+.footer-band .eyebrow { color: #FFFCEF; }
 .footer-band h2 {
   font-size: clamp(40px, 7vw, 84px);
   text-transform: uppercase;
   max-width: 900px;
-  color: #fff;
+  color: #FFFCEF;
   margin-top: 14px;
 }
 .footer-grid {
@@ -645,32 +647,32 @@ section { padding: 120px 0; }
 .footer-col span.label {
   display: block;
   font-size: 13px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,252,239,0.55);
   margin-bottom: 18px;
 }
 .quick-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .quick-links a {
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+  background: rgba(255,252,239,0.08);
+  color: #FFFCEF;
   padding: 10px 18px;
   border-radius: 100px;
   text-decoration: none;
   font-size: 14px;
   transition: background 0.2s ease;
 }
-.quick-links a:hover { background: var(--rust); }
+.quick-links a:hover { background: #FFFCEF; color: #750505; }
 
 .footer-contact a {
-  color: #fff;
+  color: #FFFCEF;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,252,239,0.3);
 }
-.footer-contact a:hover { border-color: var(--rust); color: var(--rust); }
+.footer-contact a:hover { border-color: #FFFCEF; color: #FFFCEF; opacity: .8; }
 .footer-social { margin-top: 20px; display: flex; gap: 20px; }
-.footer-social a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; }
-.footer-social a:hover { color: #fff; }
+.footer-social a { color: rgba(255,252,239,0.6); text-decoration: none; font-size: 14px; }
+.footer-social a:hover { color: #FFFCEF; }
 
 .footer-wordmark {
   position: relative;
@@ -680,7 +682,7 @@ section { padding: 120px 0; }
   font-weight: 700;
   font-size: clamp(90px, 18vw, 220px);
   line-height: 0.8;
-  color: rgba(255,255,255,0.05);
+  color: rgba(255,252,239,0.05);
   white-space: nowrap;
   letter-spacing: -0.02em;
   user-select: none;
@@ -695,7 +697,7 @@ section { padding: 120px 0; }
   font-style: italic;
   font-size: clamp(32px, 5vw, 64px);
   letter-spacing: -0.01em;
-  color: var(--rust);
+  color: #FFFCEF;
 }
 
 .copyline {
@@ -703,9 +705,9 @@ section { padding: 120px 0; }
   z-index: 2;
   margin-top: 30px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255,252,239,0.12);
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,252,239,0.5);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -726,7 +728,7 @@ section { padding: 120px 0; }
 .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 8px; }
 .lightbox-close {
   position: absolute; top: 28px; right: 32px;
-  color: #fff; font-size: 28px; background: none; border: none; cursor: pointer;
+  color: #FFFCEF; font-size: 28px; background: none; border: none; cursor: pointer;
 }
 
 /* ---------- Reveal ---------- */
