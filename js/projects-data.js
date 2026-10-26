@@ -50,7 +50,7 @@ const PROJECTS = {
     accent: "#ffd23f",
     links: [
       { label: "Research Document (PDF)", url: "https://drive.google.com/file/d/1vUQmiYyIC_bRasCEomWQDoWvjJBsiAQ1/view" },
-      { label: "Material Portfolio (Flipbook)", url: "https://online.flippingbook.com/view/507970913/" }
+      { label: "Material Portfolio (Flipbook)", url: "https://heyzine.com/flip-book/5d7708da9f.html" }
     ]
   },
   agoda: {
